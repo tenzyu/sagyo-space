@@ -7,5 +7,9 @@ services:
     volumes:
       - /home/deploy/sagyo-space:/code
     working_dir: /code
-    command: npm run build && npm run start
+    command: >
+      sh -c "
+      npm run build &&
+      npm run start
+      "
     restart: always
