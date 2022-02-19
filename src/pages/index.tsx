@@ -21,11 +21,11 @@ const Home: NextPage = () => {
           name="twitter:description"
           content="作業通話のための Discord コミュニティサーバー - 作業スペース"
         />
-        <meta name="twitter:image" content="/img/ogp.png" />
+        <meta name="twitter:image" content="/img/icon.png" />
         <meta property="og:title" content="作業スペース" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sagyo.space" />
-        <meta property="og:image" content="/img/ogp.png" />
+        <meta property="og:image" content="/img/icon.png" />
         <meta
           property="og:description"
           content="作業通話のための Discord コミュニティサーバー - 作業スペース"
@@ -35,13 +35,8 @@ const Home: NextPage = () => {
         <meta name="twitter:creator" content="@sagyo_space" />
         <meta name="twitter:domain" content="sagyo.space" />
         <meta name="twitter:image:alt" content="作業スペース" />
-        <meta name="twitter:image:width" content="1200" />
-        <meta name="twitter:image:height" content="630" />
         <meta name="twitter:image:type" content="image/png" />
-        <meta name="twitter:image:src" content="/img/ogp.png" />
-        <meta name="twitter:image:alt" content="作業スペース" />
-        <meta name="twitter:image:width" content="1200" />
-        <meta name="twitter:image:height" content="630" />
+        <meta name="twitter:image:src" content="/img/icon.png" />
         <meta name="twitter:image:type" content="image/png" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/img/apple-icon.png" />
