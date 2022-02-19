@@ -1,0 +1,69 @@
+@import '../styles/_breakpoint';
+@import '../styles/_mixin';
+
+.front {
+  min-height: 82vh;
+  @include mq(lg) {
+    min-height: 100vh;
+  }
+  background: #5e5ec9;
+  background-image: linear-gradient(30deg, transparent, #a7d4ff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 0 0.5rem;
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.25));
+
+    @include mq(lg) {
+      flex-direction: row-reverse;
+    }
+
+    .description {
+      @include mq(lg) {
+        margin-right: 6rem;
+      }
+      .title {
+        color: #eee;
+        font-size: 2.5rem;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+        text-align: center;
+      }
+      .subtitle {
+        color: #fff;
+        font-size: 1rem;
+        @include mq(lg) {
+          margin-bottom: 2rem;
+        }
+      }
+      .guide {
+        color: #fff;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        background-color: #333;
+        display: block;
+        cursor: pointer;
+        @include mq(md) {
+          transition: 0.2s;
+          &:hover {
+            color: #eee;
+            background-color: #555;
+          }
+        }
+      }
+    }
+  }
+}

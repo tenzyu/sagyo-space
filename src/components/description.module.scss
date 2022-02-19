@@ -1,0 +1,44 @@
+@import '../styles/_breakpoint';
+@import '../styles/_mixin';
+
+.description {
+  background-color: #fafafa;
+  padding-top: 16px;
+
+  .grid {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      color: #333;
+      font-size: 2rem;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .value {
+      margin: 0 2rem;
+      color: #333;
+      font-size: 1rem;
+      max-width: 500px;
+
+      p {
+        line-height: 1.25;
+      }
+    }
+
+    &:nth-child(even) {
+      background-color: #f3f3f3;
+    }
+
+    @include mq(lg) {
+      flex-direction: row;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

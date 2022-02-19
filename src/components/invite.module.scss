@@ -1,0 +1,55 @@
+@import '../styles/_breakpoint';
+@import '../styles/_mixin';
+
+.invite {
+  min-height: calc(100vh - 48px);
+  // @include mq(xl) {
+  //   min-height: 100vh;
+  // }
+  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  background: #ff55f7;
+  background-image: linear-gradient(30deg, transparent, #64b4ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 0 0.5rem;
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.25));
+
+    .description {
+      text-align: center;
+      .title {
+        color: #efefef;
+        font-size: 1.8rem;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+      }
+      a {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-size: 1rem;
+        text-decoration: none;
+      }
+      .subtitle {
+        transition: 0.2s;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        color: #fff;
+        background-color: #333;
+        &:hover {
+          color: #333;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
