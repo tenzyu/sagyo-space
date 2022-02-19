@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  sagyo-space:
+    container_name: sagyo-space
+    image: node
+    volumes:
+      - /home/deploy/sagyo-space:/code
+    working_dir: /code
+    command: npm run start
+    restart: always
